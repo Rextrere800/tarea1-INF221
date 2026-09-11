@@ -2,3 +2,12 @@ code/sorting/data
 code/matrix_multiplication/data
 *.exe
 *.out
+report/*.aux
+report/*.bbl
+report/*.bcf
+report/*.blg
+report/*.log
+report/*.run.xml
+report/*.fls
+report/*.fdb_latexmk
+report/*.synctex.gz
