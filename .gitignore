@@ -1,3 +1,4 @@
-codesorting/data
+code/sorting/data
 code/matrix_multiplication/data
 *.exe
+*.out
