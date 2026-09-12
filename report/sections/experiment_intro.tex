@@ -1,5 +1,16 @@
-\begin{mdframed}
-    \textbf{La extensión máxima para esta sección es de media página.}
-\end{mdframed}
+Los experimentos se ejecutaron en un equipo con procesador AMD Ryzen 7
+5700X, 24\,GB de RAM a 2133\,MT/s, bajo Windows 11 (versión 25H2, compilación
+26200.9445). El código se compiló con \texttt{g++} 16.2.0 (MSYS2,
+Rev3) usando el estándar C++17 y el flag de optimización \texttt{-O2}
+(\texttt{g++ -O2 -std=c++17}), consistente con el \texttt{makefile}
+incluido en el repositorio.
 
-Especifique el hardware y software utilizado para realizar los experimentos (por ejemplo, procesador, memoria RAM, sistema operativo, compilador y versión). Incluya una mención breve de los datasets utilizados, los cuales son los descritos en el enunciado de la tarea.
+Los datasets utilizados corresponden a los descritos en el enunciado de
+la tarea: para ordenamiento, arreglos de $n \in \{10, 10^3, 10^5, 10^7\}$
+elementos, con tipo $\in \{\text{ascendente}, \text{descendente},
+\text{aleatorio}\}$ y dominio $\in \{D1, D7\}$; para multiplicación de
+matrices, matrices cuadradas de $n \in \{16, 64, 256\}$\footnote{Se
+excluyó $n=1024$ ($2^{10}$) de las mediciones, con autorización del
+curso.}, con tipo $\in \{\text{densa}, \text{diagonal}, \text{dispersa}\}$
+y dominio $\in \{D0, D10\}$. En ambos casos se generaron 3 muestras
+aleatorias independientes por combinación de parámetros.

@@ -1,5 +1,14 @@
-\begin{mdframed}
-    \textbf{La extensión máxima para esta sección es un párrafo breve (máximo 1/4 de página).}
-\end{mdframed}
-
-Escriba una introducción breve que presente los dos problemas estudiados (ordenamiento de arreglos unidimensionales y multiplicación de matrices cuadradas) y el objetivo del análisis experimental: relacionar el comportamiento práctico de los algoritmos con su complejidad teórica.
+El análisis de algoritmos suele apoyarse en la notación asintótica para
+comparar su eficiencia teórica, pero esta no siempre predice su
+comportamiento real sobre hardware concreto. En este trabajo se estudian
+experimentalmente dos problemas clásicos: el ordenamiento de arreglos
+unidimensionales de números enteros, mediante los algoritmos
+\textsc{MergeSort}, \textsc{QuickSort}, \textsc{PatienceSort} y
+\texttt{std::sort} y la multiplicación de matrices cuadradas,
+mediante el algoritmo \textsc{Naive} ($O(n^3)$) y el algoritmo de
+\textsc{Strassen} ($O(n^{\log_2 7})$). El objetivo es medir tiempo de
+ejecución y uso de memoria de cada algoritmo bajo distintos tamaños de
+entrada, tipos de dato (ordenado, invertido, aleatorio; denso, diagonal,
+disperso) y dominios de valores, para luego contrastar estos resultados
+con su complejidad teórica y entender en qué medida esta última describe
+o no su desempeño práctico.

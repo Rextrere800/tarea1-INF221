@@ -3,6 +3,6 @@
 
 #include <vector>
 
-std::vector<int> sortArray(std::vector<int>& arr);
+std::vector<int> sortArray(std::vector<int> arr);
 
 #endif

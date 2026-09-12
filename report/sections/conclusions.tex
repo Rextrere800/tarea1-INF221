@@ -1,5 +1,16 @@
-\begin{mdframed}
-    \textbf{La extensión máxima para esta sección es un párrafo breve (máximo 1/4 de página).}
-\end{mdframed}
-
-Escriba una conclusión breve que interprete los resultados más importantes. Cada afirmación debe estar respaldada por los datos presentados.
+Los resultados confirman que la complejidad asintótica no basta para
+predecir el desempeño práctico. \textsc{Strassen}, pese a su menor
+complejidad teórica ($O(n^{2.807})$ frente a $O(n^3)$ de \textsc{Naive}),
+resultó hasta $364\times$ más lento en el rango medido, debido al
+overhead de asignación de memoria de su recursión.
+De forma análoga, la optimización de mediana de tres en \textsc{QuickSort},
+diseñada para evitar el peor caso clásico del pivote fijo, introdujo una
+vulnerabilidad distinta (el fenómeno conocido como \textit{"median-of-three
+killer"} \cite{mcilroy1999}): en el dominio D7, tardó $331\times$ y
+$265\times$ más en los casos ascendente y descendente respectivamente
+que en D1, mientras que en el caso aleatorio la diferencia fue de solo
+$7.4\times$. En ambos experimentos se repite el mismo patrón: una
+optimización teóricamente sólida puede fallar en la práctica bajo
+condiciones de entrada específicas que la notación asintótica no
+captura, reforzando la necesidad de validación experimental más allá
+del análisis teórico.
